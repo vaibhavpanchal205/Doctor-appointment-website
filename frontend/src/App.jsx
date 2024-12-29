@@ -9,12 +9,12 @@ import MyProfile from './Pages/MyProfile'
 import MyAppointments from './Pages/MyAppointments'
 import Appointment from './Pages/Appointment'
 import Navbar from './Components/Navbar'
-import Header from './Components/Header'
+import Footer from './Components/Footer'
+
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]'>
       <Navbar />
-      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/doctors' element={<Doctors />} />
@@ -26,6 +26,7 @@ const App = () => {
         <Route path='/my-appointments' element={<MyAppointments />} />
         <Route path='/appointment/:docId' element={<Appointment />} />
       </Routes>
+      <Footer />
     
     </div>
   )
